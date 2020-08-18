@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"container_row .",[1],"container_image { margin-top: ",[0,169],"; }\n.",[1],"container_row .",[1],"container_image wx-image { width: ",[0,459],"; height: ",[0,290],"; border-radius: 50%; }\n.",[1],"container_row .",[1],"text { height: ",[0,32],"; font-size: ",[0,34],"; font-weight: 400; color: #bbd5ef; margin-top: ",[0,62],"; }\n",],undefined,{path:"./pages/patientList/patientList.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/patientList/patientList.wxml') } }));

@@ -1,0 +1,35 @@
+.no_login_wrap {
+  display: flex;
+  background: #fff;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no_login_wrap image {
+  width: 473upx;
+  height: 230upx;
+}
+
+.no_login_wrap h4 {
+  font-size: 34upx;
+  line-height: 36upx;
+  margin-top: 64upx;
+  color: #BBD5EF;
+  font-weight: 500;
+}
+
+.no_login_wrap button {
+  margin-top: 100upx;
+  width: 420upx;
+  font-size: 34upx;
+  font-weight: 500;
+  line-height: 88upx;
+  color: #fff;
+  background: linear-gradient(45deg, #8BA5F0, #A188F9);
+}
+
+.no_login_wrap button:after {
+  display: none;
+}
