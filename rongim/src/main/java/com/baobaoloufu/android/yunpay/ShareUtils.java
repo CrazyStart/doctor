@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 
+import com.baobaoloufu.android.yunpay.constant.AppConstant;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -12,8 +14,6 @@ import java.util.Map;
 
 public class ShareUtils {
     public final static String SETTING = "Setting";
-
-    private ShareUtils(){}
 
     public static void putValue(Context context, String resKey, String value) {
         Editor sp =  context.getSharedPreferences(SETTING, Context.MODE_PRIVATE).edit();

@@ -4,7 +4,7 @@
             "outputFile": "/Users/xx/Desktop/doctor/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "/Users/xx/.gradle/caches/transforms-2/files-2.1/8812cf144863272022b8e5d46263bb57/appcompat-v7-28.0.0/res/values-v22/values-v22.xml",
+                    "source": "/Users/xx/.gradle/caches/transforms-2/files-2.1/f8d9abbcb6438d7bf5b08e11826a4397/appcompat-1.0.2/res/values-v22/values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

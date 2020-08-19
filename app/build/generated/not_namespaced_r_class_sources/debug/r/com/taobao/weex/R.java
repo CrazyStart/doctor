@@ -12,24 +12,24 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static final int sb_background = 0x7f030101;
-        public static final int sb_border_width = 0x7f030102;
-        public static final int sb_button_color = 0x7f030103;
-        public static final int sb_checked = 0x7f030104;
-        public static final int sb_checked_color = 0x7f030105;
-        public static final int sb_checkline_color = 0x7f030106;
-        public static final int sb_checkline_width = 0x7f030107;
-        public static final int sb_effect_duration = 0x7f030108;
-        public static final int sb_enable_effect = 0x7f030109;
-        public static final int sb_shadow_color = 0x7f03010a;
-        public static final int sb_shadow_effect = 0x7f03010b;
-        public static final int sb_shadow_offset = 0x7f03010c;
-        public static final int sb_shadow_radius = 0x7f03010d;
-        public static final int sb_show_indicator = 0x7f03010e;
-        public static final int sb_uncheck_color = 0x7f03010f;
-        public static final int sb_uncheckcircle_color = 0x7f030110;
-        public static final int sb_uncheckcircle_radius = 0x7f030111;
-        public static final int sb_uncheckcircle_width = 0x7f030112;
+        public static final int sb_background = 0x7f03014b;
+        public static final int sb_border_width = 0x7f03014c;
+        public static final int sb_button_color = 0x7f03014d;
+        public static final int sb_checked = 0x7f03014e;
+        public static final int sb_checked_color = 0x7f03014f;
+        public static final int sb_checkline_color = 0x7f030150;
+        public static final int sb_checkline_width = 0x7f030151;
+        public static final int sb_effect_duration = 0x7f030152;
+        public static final int sb_enable_effect = 0x7f030153;
+        public static final int sb_shadow_color = 0x7f030154;
+        public static final int sb_shadow_effect = 0x7f030155;
+        public static final int sb_shadow_offset = 0x7f030156;
+        public static final int sb_shadow_radius = 0x7f030157;
+        public static final int sb_show_indicator = 0x7f030158;
+        public static final int sb_uncheck_color = 0x7f030159;
+        public static final int sb_uncheckcircle_color = 0x7f03015a;
+        public static final int sb_uncheckcircle_radius = 0x7f03015b;
+        public static final int sb_uncheckcircle_width = 0x7f03015c;
     }
     public static final class bool {
         private bool() {}
@@ -39,17 +39,17 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int weex_error = 0x7f0702c6;
+        public static final int weex_error = 0x7f0702d7;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int weex_recycler_layout = 0x7f0a00cf;
+        public static final int weex_recycler_layout = 0x7f0a00d3;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] SwitchButton = { 0x7f030101, 0x7f030102, 0x7f030103, 0x7f030104, 0x7f030105, 0x7f030106, 0x7f030107, 0x7f030108, 0x7f030109, 0x7f03010a, 0x7f03010b, 0x7f03010c, 0x7f03010d, 0x7f03010e, 0x7f03010f, 0x7f030110, 0x7f030111, 0x7f030112 };
+        public static final int[] SwitchButton = { 0x7f03014b, 0x7f03014c, 0x7f03014d, 0x7f03014e, 0x7f03014f, 0x7f030150, 0x7f030151, 0x7f030152, 0x7f030153, 0x7f030154, 0x7f030155, 0x7f030156, 0x7f030157, 0x7f030158, 0x7f030159, 0x7f03015a, 0x7f03015b, 0x7f03015c };
         public static final int SwitchButton_sb_background = 0;
         public static final int SwitchButton_sb_border_width = 1;
         public static final int SwitchButton_sb_button_color = 2;

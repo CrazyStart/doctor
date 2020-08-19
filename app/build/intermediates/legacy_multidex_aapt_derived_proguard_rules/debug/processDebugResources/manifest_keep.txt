@@ -1,10 +1,10 @@
 # Referenced at /Users/xx/Desktop/doctor/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:154
--keep class android.support.v4.app.CoreComponentFactory { <init>(); }
+-keep class com.sureemed.hcp.rongim { <init>(); }
 # Referenced at /Users/xx/Desktop/doctor/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:154
 -keep class io.dcloud.application.DCloudApplication { <init>(); }
 # Referenced at /Users/xx/Desktop/doctor/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:298
 -keep class io.dcloud.multiprocess.activity.WebAppActivity1 { <init>(); }
-# Referenced at /Users/xx/Desktop/doctor/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:550
+# Referenced at /Users/xx/Desktop/doctor/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:551
 -keep class io.rong.push.rongpush.PushReceiver { <init>(); }
-# Referenced at /Users/xx/Desktop/doctor/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:545
+# Referenced at /Users/xx/Desktop/doctor/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:546
 -keep class io.rong.push.rongpush.PushService { <init>(); }

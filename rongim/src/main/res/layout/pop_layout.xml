@@ -14,12 +14,12 @@
 
 
         <TextView
+            android:id="@+id/clear_chat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="更改咨询费"
+            android:text="患者详情"
             android:layout_marginBottom="15dp"
             android:textSize="15sp"
-            android:id="@+id/change_fee"
             android:textColor="#FFF"/>
 
         <View
@@ -30,10 +30,10 @@
             android:background="#FFFFFF"/>
 
         <TextView
+            android:id="@+id/change_fee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="清空聊天记录"
-            android:id="@+id/clear_chat"
+            android:text="咨询费用"
             android:layout_marginTop="15dp"
             android:textSize="15sp"
             android:textColor="#FFF"/>

@@ -23,6 +23,7 @@ attr RCMaxWidth
 attr RCMinShortSideSize
 attr RCShape
 attr RCStyle
+attr alpha
 attr coordinatorLayoutStyle
 attr font
 attr fontProviderAuthority
@@ -32,6 +33,7 @@ attr fontProviderFetchTimeout
 attr fontProviderPackage
 attr fontProviderQuery
 attr fontStyle
+attr fontVariationSettings
 attr fontWeight
 attr keylines
 attr layout_anchor
@@ -41,6 +43,7 @@ attr layout_dodgeInsetEdges
 attr layout_insetEdge
 attr layout_keyline
 attr statusBarBackground
+attr ttcIndex
 bool abc_action_bar_embed_tabs
 bool rc_enable_automatic_download_voice_msg
 bool rc_enable_mentioned_message
@@ -142,6 +145,8 @@ dimen compat_button_inset_vertical_material
 dimen compat_button_padding_horizontal_material
 dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
+dimen compat_notification_large_icon_max_height
+dimen compat_notification_large_icon_max_width
 dimen notification_action_icon_size
 dimen notification_action_text_size
 dimen notification_big_circle_margin
@@ -181,6 +186,10 @@ dimen rc_ext_sub_menu_item_text_size
 dimen rc_extension_bar_min_height
 dimen rc_extension_board_height
 dimen rc_popup_dialog_distance_to_edge
+dimen subtitle_corner_radius
+dimen subtitle_outline_width
+dimen subtitle_shadow_offset
+dimen subtitle_shadow_radius
 drawable def_gif_bg
 drawable fire
 drawable notification_action_background
@@ -1036,6 +1045,8 @@ id start
 id status_bar_latest_event_content
 id summary
 id tag_transition_group
+id tag_unhandled_key_event_manager
+id tag_unhandled_key_listeners
 id text
 id text2
 id time
@@ -1723,9 +1734,12 @@ style rc_pb_file_download_progress
 style vertical_light_thin_divider
 styleable AsyncImageView RCCornerRadius RCDefDrawable RCMask RCMinShortSideSize RCShape
 styleable AutoLinkTextView RCMaxWidth
+styleable ColorStateListItem alpha android_alpha android_color
 styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery
-styleable FontFamilyFont android_font android_fontStyle android_fontWeight font fontStyle fontWeight
+styleable FontFamilyFont android_font android_fontStyle android_fontVariationSettings android_fontWeight android_ttcIndex font fontStyle fontVariationSettings fontWeight ttcIndex
+styleable GradientColor android_centerColor android_centerX android_centerY android_endColor android_endX android_endY android_gradientRadius android_startColor android_startX android_startY android_tileMode android_type
+styleable GradientColorItem android_color android_offset
 styleable RongExtension RCStyle
 xml rc_file_path

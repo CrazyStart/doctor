@@ -4,7 +4,7 @@
             "outputFile": "/Users/xx/Desktop/doctor/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v17/values-ldltr-v17.xml",
             "map": [
                 {
-                    "source": "/Users/xx/.gradle/caches/transforms-2/files-2.1/2910f59a376dbca9b6183187a0bb6c9a/uniapp-v8-release/res/values-ldltr-v17/values-ldltr-v17.xml",
+                    "source": "/Users/xx/.gradle/caches/transforms-2/files-2.1/2ea1fcfbd3c5cdf2dd42c29c4a84c4a2/jetified-uniapp-v8-release/res/values-ldltr-v17/values-ldltr-v17.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

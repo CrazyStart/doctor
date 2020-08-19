@@ -15,7 +15,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/back_icon"
             android:layout_marginLeft="15dp"
-            android:id="@+id/back_icon"/>
+            android:id="@+id/back_icon" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
             android:textSize="17sp"
             android:textStyle="bold"
             android:id="@+id/title"
-            android:layout_centerInParent="true"/>
+            android:layout_centerInParent="true" />
 
         <ImageView
             android:layout_width="22dp"
@@ -33,39 +33,260 @@
             android:src="@drawable/more_icon"
             android:layout_marginRight="15dp"
             android:layout_alignParentRight="true"
-            android:id="@+id/right_icon"/>
+            android:id="@+id/right_icon" />
 
     </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#F2F2F2"/>
+        android:background="#F2F2F2" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layout_count_down"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="#FFEBEE"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_time_alert"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF3754"
+                    android:textSize="12sp"
+                    android:text="距离咨询结束时间还剩："/>
+
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#FF3754"
+                    tools:text="24:00:00"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_close_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="@drawable/shape_end_consult"
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/ic_end_consult"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#828282"
+                        android:textSize="11sp"
+                        android:layout_marginLeft="2dp"
+                        android:text="结束"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
 
 
             <fragment
                 android:id="@+id/conversation"
                 android:name="io.rong.imkit.fragment.ConversationFragment"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout_count_down"/>
 
             <LinearLayout
+                android:id="@+id/layout_bottom_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="46dp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true">
+
+
+                <TextView
+                    android:id="@+id/tv_chat_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="#DFF5EC"
+                    android:textColor="#1EC8A5"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textSize="12sp"
+                    android:text="新患者"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_chat_status_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="#DFF5EC"
+                    android:visibility="gone"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:textColor="#1EC8A5"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="追问中，剩余"/>
+
+                    <TextView
+                        android:id="@+id/tv_consult_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:textColor="#6464CD"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:textColor="#1EC8A5"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="次回复，到期时间："/>
+
+                    <TextView
+                        android:id="@+id/tv_consult_expiry_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:textColor="#6464CD"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="5月21日 10:05"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_send_consult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/tv_send_consult_status_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="#DFF5EC"
+                    android:textColor="#1EC8A5"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    android:text="新患者"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_send_consult_status_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="#DFF5EC"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:textColor="#1EC8A5"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="追问中，剩余"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:textColor="#6464CD"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:textColor="#1EC8A5"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="次回复"/>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:id="@+id/tv_tip_send_consult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="患者未发起咨询，您可以："
+                        android:textColor="#212121"
+                        android:layout_marginTop="12dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_send_consult"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="赠送回复机会"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginEnd="48dp"
+                        android:layout_marginBottom="32dp"
+                        android:background="@drawable/shape_send_consult_btn" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/end_layout"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:layout_marginTop="-50dp"
                 android:orientation="vertical"
-                android:id="@+id/end_layout"
-                android:visibility="gone">
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                >
 
                 <TextView
                     android:layout_width="match_parent"
@@ -74,7 +295,7 @@
                     android:gravity="center"
                     android:textColor="#999999"
                     android:textSize="13sp"
-                    android:background="#FFFFFF"/>
+                    android:background="#FFFFFF" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -84,58 +305,10 @@
                     android:gravity="center"
                     android:textSize="15sp"
                     android:textColor="#AD85FC"
-                    android:id="@+id/btn_huifang"/>
+                    android:id="@+id/btn_huifang" />
 
             </LinearLayout>
 
-
-        </LinearLayout>
-
-
-
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_centerVertical="true"
-            android:id="@+id/time_icon_single"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/time_icon"/>
-
-        <RelativeLayout
-            android:layout_width="145dp"
-            android:layout_height="40dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:id="@+id/time_bg_layout"
-            android:paddingLeft="7dp"
-            android:background="@drawable/time_bg_icon">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:src="@drawable/time_icon"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="距离结束时间还剩"
-                android:id="@+id/time_info"
-                android:layout_marginTop="2dp"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:layout_below="@+id/time_info"
-                android:textColor="#FFFFFF"
-                tools:text="24:00:00"
-                android:layout_marginLeft="20dp"
-                android:id="@+id/time_text"/>
         </RelativeLayout>
 
     </RelativeLayout>
